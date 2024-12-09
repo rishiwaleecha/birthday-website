@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        /* Basic styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fef2e6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Main container */
+        .container {
+            padding: 40px;
+        }
+
+        h1 {
+            color: #ff66b2;
+            font-size: 3em;
+            margin-top: 50px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        /* First image at the top */
+        .image-box {
+            width: 60%; /* The image will occupy 60% of the page width */
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover; /* Ensures image is not distorted */
+        }
+
+        /* Scroll animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Section for writing about the person */
+        .about {
+            font-size: 1.2em;
+            margin: 40px auto;
+            max-width: 900px;
+            opacity: 0;
+            animation: fadeInUp 2s ease-out forwards;
+        }
+
+        .about p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .about .highlight {
+            color: #ff66b2;
+            font-weight: bold;
+        }
+
+        /* Smooth scrolling */
+        html, body {
+            scroll-behavior: smooth;
+        }
+
+        /* Animation for text */
+        .text-scroll {
+            margin: 40px auto;
+            padding: 20px;
+            width: 80%;
+            text-align: left;
+            max-width: 900px;
+            animation: fadeInUp 3s ease-out forwards;
+        }
+
+        /* Second image after the birthday message */
+        .second-image-box {
+            width: 60%; /* Adjusted to 60% for smaller size */
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            animation: fadeInUp 2s ease-out forwards;
+        }
+
+        .second-image-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Main Title -->
+        <h1>🎉 Happy Birthday [Name]! 🎂</h1>
+
+        <!-- First Image at the top -->
+        <div class="image-box">
+            <img src="mansi mam Image 2024-12-09 at 13.21.42_5e4dc2b8.jpg" alt="Birthday Image">
+        </div>
+
+        <!-- Writing space for how great the person is -->
+        <div class="about">
+            <p>Today is a special day, celebrating the amazing person you are! 🎉</p>
+            <p><span class="highlight">[Name]</span>, you have an incredible ability to brighten up any room with your positive energy and kindness. Everyone who knows you is lucky to have you in their lives.</p>
+            <p>Your heart is full of love, and your generosity and empathy inspire others to be the best versions of themselves. You constantly make the world a better place with your smile and compassion. 🌟</p>
+            <p>Thank you for all the laughter, wisdom, and moments you’ve shared with us. May this year bring you even more joy, success, and unforgettable memories!</p>
+        </div>
+
+        <!-- Second Image -->
+        <div class="second-image-box">
+            <img src="mansi mam 2 Image 2024-12-09 at 13.21.41_55bc393d.jpg" alt="Second Image">
+        </div>
+
+        <!-- Scrollable text animation -->
+        <div class="text-scroll">
+            <p>You are truly one of a kind. With each year, you become even more amazing. Your determination, passion, and perseverance make you unstoppable. 🎯</p>
+            <p>Here's to more adventures, more laughter, and more happiness ahead. You deserve nothing but the best today and always!</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
